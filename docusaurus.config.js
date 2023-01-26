@@ -101,6 +101,24 @@ const config = {
             ]
           },
           {
+            label: 'Educational Resources',
+            position: 'left',
+            items: [
+              {
+                label: 'Beginner level',
+                href: '/docs/educational-resources/how-to-swap'
+              },
+              {
+                label: 'Inermediate level',
+                href: '/',
+              },
+              {
+                label: 'Advanced',
+                href: '/',
+              },1
+            ]
+          },
+          {
             label: 'Grants Program',
             position: 'right',
             href: 'https://1inch.io/foundation-grant-program/'
