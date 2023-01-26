@@ -101,6 +101,16 @@ const config = {
             ]
           },
           {
+            label: 'Educational Resources',
+            position: 'left',
+            items: [
+              {
+                label: '1inch Help Center',
+                href: '/docs/educational-resources/how-to-stake/how-to-stake',
+              }
+            ]
+          },
+          {
             label: 'Grants Program',
             position: 'right',
             href: 'https://1inch.io/foundation-grant-program/'
