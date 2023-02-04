@@ -1,6 +1,4 @@
-﻿**How to stake:**
-
-First connect your wallet. Then click on the “DAO” tab, followed by “Staking”.
+﻿First connect your wallet. Then click on the “DAO” tab, followed by “Staking”.
 
 ![](DAODropdown.jpeg)
 
