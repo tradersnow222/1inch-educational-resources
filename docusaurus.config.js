@@ -4,7 +4,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-/** @type {import('@docusaurus/types').Config} */
+/** @type {import('@docusaurus/types')} */
 const config = {
   title: '1inch Network',
   tagline: 'The 1inch Network unites decentralized protocols whose synergy enables the most lucrative, fastest and protected operations in the DeFi space.',
@@ -40,7 +40,7 @@ const config = {
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    /** @type {import('@docusaurus/preset-classic')} */
     ({
       navbar: {
         title: '1inch Network Docs',
@@ -105,8 +105,16 @@ const config = {
             position: 'left',
             items: [
               {
-                label: '1inch Help Center',
-                href: '/docs/educational-resources/how-to-stake/how-to-stake',
+                label: 'Basic articles',
+                href: '/docs/educational-resources/Basic/Basic',
+              },
+              {
+                label: 'Intermediate articles',
+                href: '/docs/educational-resources/Intermediate/Intermediate',
+              },
+              {
+                label: 'Advanced articles',
+                href: '/docs/educational-resources/Advanced/Advanced',
               }
             ]
           },
