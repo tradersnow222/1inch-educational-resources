@@ -105,8 +105,8 @@ const config = {
             position: 'left',
             items: [
               {
-                label: 'Basic articles',
-                href: '/docs/educational-resources/Basic/Basic',
+                label: 'Beginner articles',
+                href: '/docs/educational-resources/Beginner/Beginner',
               },
               {
                 label: 'Intermediate articles',
