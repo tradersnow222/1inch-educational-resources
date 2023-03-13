@@ -15,7 +15,8 @@ Once we have the function selector, we can use the function signature to determi
 // transfer(uint256 amount, address to)
 0xb7760c8f 
 // arguments
-000000000000000000000000000000000000000000000000000000004d866d9200000000000000000000000068b3465833fb72a70ecdf485e0e4c7bd8665fc45```
+000000000000000000000000000000000000000000000000000000004d866d9200000000000000000000000068b3465833fb72a70ecdf485e0e4c7bd8665fc45
+```
 
 Now that the function selector and arguments are separated, the arguments can be decoded. In their most basic form, every argument is padded to 32 bytes. This is because the calldata is stored in 32 byte slots. We can use this information to extract the arguments from the calldata.
 
@@ -38,7 +39,8 @@ To show how complicated strings can be, consider the following example of "hello
 0x
 0000000000000000000000000000000000000000000000000000000000000020
 000000000000000000000000000000000000000000000000000000000000000c
-48656c6c6f20576f726c64210000000000000000000000000000000000000000```
+48656c6c6f20576f726c64210000000000000000000000000000000000000000
+```
 
 The first 32 bytes represent the offset to the string. The second 32 bytes represent the length of the string. The remaining bytes represent the string itself. The string is padded to 32 bytes, so the remaining bytes are 0s.
 
