@@ -1,4 +1,4 @@
-### What is price impact vs. slippage in DeFi?
+## What is price impact vs. slippage in DeFi?
 
 How to protect yourself from these two market dynamics when swapping on 1inch Network
 
@@ -13,7 +13,7 @@ What happens if I set the slippage tolerance too high or too low for a transacti
 ---
 
 
-#### **What is Price Impact?**
+### **What is Price Impact?**
 
 Price impact is the influence of user's individual trade over the market price of an underlying asset pair. It is directly correlated with the amount of liquidity in the[ pool / Automated Market Maker (AMM)](https://medium.com/dragonfly-research/what-explains-the-rise-of-amms-7d008af1c399). Price impact can be especially high for illiquid markets/pairs, and may cause a trader to **_lose a significant portion of their funds._**
 
@@ -30,18 +30,19 @@ If the user in this example were to continue with the swap, they would be tradin
 Price impact can also be positive too! If the pool is imbalanced in the opposite direction, your trade might take place at a discount relative to the pool. This is also known as an arbitrage opportunity.
 
 
-#### **What is the difference between Price _Impact_ and Price _Slippage_?**
+### **What is the difference between Price _Impact_ and Price _Slippage_?**
 
 Price impact and price slippage are very similar; however, **there is a nuance**.
 
-**_Price slippage_** refers to the change in price caused by external broad market movements (unrelated to your trade), while **_price impact_** refers to the change in price directly caused by your own trade itself.
+**_Price slippage_** refers to the change in price caused by external broad market movements (unrelated to your trade).   
+**_Price impact_** refers to the change in price directly caused by your own trade itself.
 
 Like price impact, slippage is also highly dependent upon the liquidity in a pool. If the token pair as a low amount of liquidity, it takes smaller collective market movements to cause significant changes to the pool's rate.
 
 Slippage can be positive as well. If the rate changes in a favorable direction, a surplus amount of tokens is returned for the swap. Currently on 1inch network, 100% of the "swap surplus" is[ distributed to the 1inch Network Treasury and Referrers](https://blog.1inch.io/the-road-to-decentralization-ddee58d3b198).
 
 
-#### **How to minimize negative price impact**
+### **How to minimize negative price impact**
 
 By design, the 1inch Network pathfinder algorithm will automatically split your trade amount between multiple liquidity sources. This ensures that you will have minimal negative price impact for your trade.
 
@@ -50,7 +51,7 @@ _Please note: The 1inch router cannot optimize price impact for illiquid tokens 
 To manually reduce the price impact of a swap, you can reduce the amount swapped, or wait for more liquidity to enter the market. For many "less reputable projects" or[ scam tokens](https://help.1inch.io/en/articles/5363502-5-tools-to-identify-a-defi-scam-token), this liquidity will never show up. Also, it is strongly recommended to confirm that the amount of tokens in the "You Receive" section is the correct amount of tokens for the current market rate.
 
 
-#### **How to control slippage**
+### **How to control slippage**
 
 1inch has a very effective tool for handling slippage. It is called the "slippage tolerance" feature, and allows users to set a desired percentage of tolerable slippage for their trade.
 
@@ -72,7 +73,7 @@ If the returned token amount falls beyond the allotted slippage tolerance betwee
 While failed transactions cost gas fees (that[ cannot be returned](https://help.1inch.io/en/articles/4825408-can-i-get-a-refund-from-1inch-network)), it prevents a further loss of funds do to the slippage.
 
 
-#### **What happens if I set the slippage tolerance too high or too low for a transaction?**
+### **What happens if I set the slippage tolerance too high or too low for a transaction?**
 
 There is often a "sweet spot" for setting the slippage tolerance. This ideal amount varies based on each individual token, transaction, and your personal risk tolerance.
 
