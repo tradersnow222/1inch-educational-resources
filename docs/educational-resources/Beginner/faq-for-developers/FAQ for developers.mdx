@@ -32,3 +32,5 @@ FAQ Dev questions
     You can use a gas oracle like https://www.blocknative.com/gas-estimator for the gas price. For the gas limit you must use the eth_estimateGas rpc call.  https://ethereum.org/en/developers/docs/apis/json-rpc/#eth_estimategas
 > How can I find the contract address being used in the route?
     Currently this is not possible with the consumer api, it will only provide the protocol and the from and to token address used in the part. 
+>  Is there a way to get a faster response times from quote, for example, by batching multiple quote requests etc.?
+    Currently there is not any possible method for speeding up response times or batching requests. Each request must be separate.
