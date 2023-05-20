@@ -1,0 +1,40 @@
+// Action Items:
+// - Need to add some code below <handleFeedback> to record the feedback
+// - need to write "How to contribute to 1inch docs" guide
+// - need draft of TOS for public docs contributors
+
+
+import React, { useState } from 'react';
+
+function Footer() {
+  const [feedback, setFeedback] = useState(null);
+
+  const handleFeedback = (value) => {
+    setFeedback(value);
+  };
+
+  return (
+    <footer>
+      <div>
+        <h2>Help and support</h2>
+        <p>Did this doc help you?</p>
+        <button onClick={() => handleFeedback('up')}>👍</button>
+        <button onClick={() => handleFeedback('down')}>👎</button>
+        {feedback && <p>Thanks for your feedback!</p>}
+        <a href="LINK_TO_YOUR_PRIVACY_POLICY">Privacy policy</a>
+        <h2>Help us make these docs great!</h2>
+        <p>All 1inch docs are open source. See something that's wrong or unclear? Submit a pull request.</p>
+        <a href="LINK_TO_CONTRIBUTION_GUIDE">Learn how to contribute</a>
+      </div>
+      <div>
+        <button onClick={() => window.location.href='LINK_TO_CONTRIBUTION_GUIDE'}>
+          Help us make these docs great!
+        </button>
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;
+
+
